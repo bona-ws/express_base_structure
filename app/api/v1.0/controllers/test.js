@@ -1,5 +1,5 @@
-const test = () => {
-	console.log("controller test");
+const test = (req, res) => {
+	res.send("controller test");
 };
 
-module.export = test;
+module.exports = test;

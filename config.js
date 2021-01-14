@@ -5,6 +5,4 @@ const dotenv = require("dotenv").config({
 			: "production.env",
 });
 
-const router = require("express").Router();
-
-module.exports = { dotenv, router };
+module.exports = { dotenv };

@@ -1,9 +1,11 @@
-const { router } = require("../../../../config");
-const controllers = require("../controllers/index.js");
+const express = require("express");
+const router = express.Router();
+
+const controllers = require("../controllers/");
 
 const { test } = controllers;
 
 // test
-router.post("/test", test);
+router.get("/test", test);
 
-// export default router;
+module.exports = router;
